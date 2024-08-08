@@ -9,6 +9,7 @@
       type="image/png"
       href="images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +20,37 @@
     <title>Shortly</title>
   </head>
   <body>
-    <h1 class="text-4xl mb-4">Welcome</h1>
-    <p>Start building your Tailwind project</p>
+    <!-- Nav Container -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex Container for All Items-->
+      <div class="flex items-center justify-between">
+        <!-- Flex Container for Logo/Menu -->
+        <div class="flex items-center space-x-20">
+          <!-- Logo -->
+          <img src="images/logo.svg" />
+          <!-- Left Menu -->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Features</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Pricing</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Resources</a
+            >
+          </div>
+        </div>
+        <!-- Right Buttons Menu -->
+        <div class="hidden items-center space-x-6 font-bold lg:flex">
+          <div class="text-grayishViolet hover:text-veryDarkViolet">Login</div>
+          <a href="#" class="bg-cyan text-white px-8 py-3 rounded-full"
+            >Sign Up</a
+          >
+        </div>
+        <!-- Hamburger Menu -->
+      </div>
+      <!-- Mobile Menu -->
+    </nav>
   </body>
 </html>
